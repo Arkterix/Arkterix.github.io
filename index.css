@@ -138,9 +138,14 @@ a.navbar-button:active
 
 .navbar-inverse .navbar-nav>li>a {
     color: white !important;
-    line-height: 25px; !important;
-    background-image: #3c3c3c !important;
+    line-height: 26px !important;
+
 }
+
+.navbar-inverse{
+  background-image: none !important;
+}
+
 
 .text_container{
   display: flex;
@@ -413,6 +418,10 @@ footer{
   }
   .text_container{
     width: 100%;
+  }
+  .item_section
+  {
+    margin: 20px;
   }
 }
 
