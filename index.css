@@ -157,7 +157,7 @@ a.navbar-button:active
 }
 
 .background{
-  background: url('./images/Main_Background.jpg');
+  background: url("./images/Main_Background.jpg");
   background-size: cover;
   height: 100vh;
   z-index: 1;
