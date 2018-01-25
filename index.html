@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andy's Website</title>
+  <meta charset = "utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#andyNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h1 class="page-title">Andy Chu</h1>
+      </div>
+
+      <div class="collapse navbar-collapse" id="andyNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class = "navbar-items"><a class = "navbar-button" id= "resumeButton" href="#">Resume</a></li>
+          <li class = "navbar-items"><a class = "navbar-button" id= "aboutButton" href="#">About</a></li>
+          <li class = "navbar-items"><a class = "navbar-button" id= "workButton" href="#">Workplace</a></li>
+          <li class = "navbar-items"><a class = "navbar-button" id= "contactButton" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <img class= "img-circle" src = 'file:///Users/AndyChu/Documents/Web%20Project%202/images/Profile_Pic.jpg'>
+
+    <div class = "intro_words">
+      <p>Hello!</p>
+    </div>
+
+    <div class="text_container">
+      <p class="intro_text">I'm a <span class= "yeti_blue">Software Design</span> student
+        in the <span class= "black_diamond_blue">School of Computing</span> at
+        <span class= "queens_orange">Queen's University</span>. My passion is building progressive and clean user interfaces. I'd probably love to work for you, unless you want me to design a school yearbook... I won't do that.
+      </p>
+
+      <section id="section05" class="demo">
+        <a href="#section05"><span></span>More about me!</a>
+      </section>
+
+      <div class = "about_section">
+        <h2 class ="work_title">Hey it's me, Andy Chu!</h2>
+
+        <section class = "item_section2">
+          <div class = "item_container2">
+            <div class = "item_stat_container">
+              <ul class = "stats">
+                <li class = "stat_bullets">Mobile Development</li>
+                <div id='md_dev' class = "MD_rectangle" style="width:0px"></div>
+
+                <li class = "stat_bullets">Web Development</li>
+                <div id='web_dev' class = "MD_rectangle" style="width:0px"></div>
+
+                <li class = "stat_bullets">UI/UX Design</li>
+                <div id='ui_design' class = "MD_rectangle" style="width:0px"></div>
+
+                <li class = "stat_bullets">Teamwork</li>
+                <div id='teamwork' class = "MD_rectangle" style="width:0px"></div>
+
+                <li class = "stat_bullets">Python</li>
+                <div id='python' class = "MD_rectangle" style="width:0px"></div>
+
+                <li class = "stat_bullets">Java</li>
+                <div id='java'class = "MD_rectangle" style = "width: 0px"></div>
+
+                <li class = "stat_bullets">C</li>
+                <div id='c' class = "MD_rectangle" style = "width: 0px"></div>
+
+                <li class = "stat_bullets">Problem Solving</li>
+                <div id='problemS' class = "MD_rectangle" style = "width: 0px"></div>
+              </ul>
+            </div>
+
+            <div class = "item_details">
+              <p>I have developed a keen interest in the process of
+                 developing high quality software solutions. This can
+                 be reflected by my workplace achievements while working at
+                 Enercare and ESDC.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class = "work_section">
+        <h2 class ="work_title">Work Experience</h2>
+
+        <section class = "item_section">
+          <div class = "item_container">
+            <div class = "item_image_container1"></div>
+            <div class = "item_details">
+              <p><span class ="item_details_title" >Teacher's Assistant</span></p>
+              <p>January 2018 – April 2018</p>
+              <ul>
+                <li>Currently a Teacher's assistant for CISC 332 - Database Management Systems</li>
+                <li>Responsible for tutoring students on Data Models, Relational query languages, Relational database design, Application interfaces and embedded SQL, Storage and indexing.</li>
+                <li>Also responsible for marking assignments and projects</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class = "item_section">
+          <div class = "item_container">
+            <div class = "item_image_container2"></div>
+            <div class = "item_details">
+              <p><span class ="item_details_title" >Systems Analyst Intern</span></p>
+              <p>January 2016 – December 2016</p>
+              <ul>
+                <li>Assisted Enercare's IT team in the system development life cycle of multiple projects.</li>
+                <li>Developed and designed the ECFP Mobile App, a finance-based iOS iPad application built on the Xamarin platform. Helped to save the company over $2 million in costs.</li>
+                <li>Participated in the development of a prototype CRM system that utilized Big Data technologies like HDInsight and Apache Pig.</li>
+                <li>Set up SharePoint repositories for the IT Team.</li>
+                <li>Performed a variety of Data Profiling, Analysis and Cleansing work.</li>
+                <li>Created dynamic BI Dashboards using Tableau.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class = "item_section">
+          <div class = "item_container">
+            <div class = "item_image_container3">
+            </div>
+            <div class = "item_details">
+              <p><span class ="item_details_title" >Information Management Administrative Assistant </span></p>
+              <p>June 2015 – September 2015</p>
+              <ul>
+                <li>Responsible for assisting in the Strategic Integration, Planning, and Coordination (SIPC) of the Labour Program.</li>
+                <li>Developed Java program that converted over 50,000 wrongly formatted file names into a specific department-issued format, saved employees from having to manually change file names.</li>
+                <li>Created a File Duplication Deletion program that utilized MD5 Checksums to determine duplicate files in a 5 Tb Directory and then delete them. Saved over 2 weeks’ worth of productivity for my team.</li>
+                <li>Created 3 Guides that helped to resolve common issues encountered by employees while using Excel.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class = "contact_section">
+        <h2 class ="work_title" style="margin-bottom: 30px">Contact</h2>
+        <p>Let's work together!</p>
+        <p> Feel free to connect with me through</p>
+        <p><span style="color: #3b5998">Facebook</span>,
+          <span style="color: #0077B5">Linkedin</span>, or by <span class= "queens_orange">Email</span>.</p>
+        </p>
+      </div>
+
+      <footer>
+        <div class = "footer_section">
+          <h3>Andy Chu</h3>
+        </div>
+      </footer>
+    </div>
+
+    <div class = "background">
+    </div>
+  </div>
+
+
+
+
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src='/Users/AndyChu/Documents/Web Project 2/index.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
