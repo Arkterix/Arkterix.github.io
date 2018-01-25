@@ -157,7 +157,7 @@ a.navbar-button:active
 }
 
 .background{
-  background: url('file:///Users/AndyChu/Documents/Web%20Project%202/images/Main_Background.jpg');
+  background: url('./images/Main_Background.jpg');
   background-size: cover;
   height: 100vh;
   z-index: 1;
@@ -291,7 +291,7 @@ footer{
 
 .item_image_container1
 {
-  background-image: url("file:///Users/AndyChu/Documents/Web%20Project%202/images/QueensU_crest.png");
+  background-image: url("./images/QueensU_crest.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -301,7 +301,7 @@ footer{
 
 .item_image_container2
 {
-  background-image: url("file:///Users/AndyChu/Documents/Web%20Project%202/images/Enercare.png");
+  background-image: url("./images/Enercare.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -311,7 +311,7 @@ footer{
 
 .item_image_container3
 {
-  background-image: url("file:///Users/AndyChu/Documents/Web%20Project%202/images/ESDC.jpg");
+  background-image: url("./images/ESDC.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
