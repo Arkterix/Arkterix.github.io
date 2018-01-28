@@ -415,7 +415,7 @@ footer{
   .intro_words{
     padding-left: 2%;
   }
-}
+}/*padding fix I hope*/
 
 @media (max-width: 766px) {
   /* .img-circle {
