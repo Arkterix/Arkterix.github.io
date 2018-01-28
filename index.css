@@ -422,6 +422,10 @@ footer{
   {
     margin: 20px;
   }
+  h2.work_title
+  {
+    margin-top: 10%;
+  }
 }
 
 .demo a {
@@ -433,7 +437,7 @@ footer{
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font : normal 'Open Sans', sans-serif; 
+  font : normal 'Open Sans', sans-serif;
   /* letter-spacing: .1em; */
   text-decoration: none;
   transition: opacity .3s;
