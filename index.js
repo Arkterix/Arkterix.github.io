@@ -85,5 +85,5 @@ var waypoint = new Waypoint({
       problemS.style.animation = "md_rec8 1s forwards"
     }, 500)
   },
-  offset: 600
+  offset: '70%'
 })
