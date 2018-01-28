@@ -21,24 +21,25 @@ body{
     -moz-border-radius: 20%;
     -webkit-border-radius: 20%;
     border-radius: 50%;
-    margin-top: 14%;
+    /* margin-top: 14%; */
     width: 30%; /* you can use % */
     height: auto;
     z-index: 2;
     padding: 0;
     position: relative;
     box-shadow: 0px 0px 0px 3px #FFFFFF;
+    display:block;
+    margin:auto;
+    margin-bottom: 5%;
 }
 
 .intro_words{
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 13em;
   color: white;
   padding: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  /* margin-left: 70%; */
+  line-height: 1em;
   z-index: 2;
   position: relative;
 }
@@ -151,7 +152,7 @@ a.navbar-button:active
   flex-direction: column;
   align-items: center;
   min-width: 375px;
-  position: relative;
+  position: absolute;
   /* height: 2000px; */
   background-color: rgba(18,18,18,0.7);
   width: 86%;
@@ -174,7 +175,7 @@ a.navbar-button:active
 
 
 .intro_text{
-  margin: 2em;
+  margin: 1em;
   /* font-style: Regular; */
   font-size: 1.2em;
   line-height: 180%;
@@ -330,6 +331,13 @@ footer{
   padding: 1em;
 }
 
+.item_details2
+{
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  padding: 0;
+}
+
 .item_details_title
 {
   font-family: 'Lato', sans-serif;
@@ -348,14 +356,24 @@ footer{
 }
 
 
+.intro_words {
+  position: relative;
+}
+
+.intro_words span {
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
 @media (max-width: 1200px) {
-  .img-circle {
+  /* .img-circle {
     margin-top: 13%;
-  }
-  .intro_words{
+  } */
+  /* .intro_words{
     margin-top: 0.6em;
     margin-bottom: 0.6em;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
@@ -375,29 +393,26 @@ footer{
 }
 
 @media (max-width: 766px) {
-  .img-circle {
+  /* .img-circle {
     margin-top: 16%;
-  }
-  .intro_words{
+  } */
+  /* .intro_words{
     margin-top: 0.6em;
     margin-bottom: 0.6em;
-  }
+  } */
   .item_container2
   {
     flex-wrap: wrap;
   }
-
 }
 
 @media (max-width: 674px) {
   .img-circle {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     width: 50%;
   }
   .intro_words{
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    font-size: 2em;
+    font-size: 6em;
   }
   .intro_text
   {
@@ -430,7 +445,7 @@ footer{
 
 .demo a {
   position: relative;
-  top: 1em;
+  top: 3.2em;
   bottom: 20px;
   z-index: 2;
   display: inline-block;
@@ -451,6 +466,10 @@ footer{
 .demo a:focus{
   color: white;
   text-decoration: none;
+}
+
+#section05{
+  height: 80px;
 }
 
 #section05 a {

@@ -11,7 +11,15 @@ function main() {
 
 $(document).ready(main);
 
+var windowHeight = window.innerHeight;
 var navBarHeight = $('.navbar').height();
+var getDownButtonHeight = $('#section05').height();
+$('.text_container').css("top", windowHeight-getDownButtonHeight);
+
+$('.intro_words').css("height",windowHeight-navBarHeight-getDownButtonHeight);
+$('.intro_words').css("margin-top",navBarHeight);
+console.log(windowHeight-navBarHeight-getDownButtonHeight);
+
 
 $("#section05").click(function() {
     $('html,body').animate({
@@ -36,8 +44,6 @@ $("#contactButton").click(function() {
         scrollTop: $(".contact_section").offset().top - navBarHeight},
         'slow');
 });
-
-
 
 $('.nav a').click(function(){
   $('.navbar-collapse').collapse('hide');
