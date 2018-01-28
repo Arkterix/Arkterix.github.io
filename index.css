@@ -44,7 +44,7 @@ body{
   position: absolute;
   width: 100%;
   text-align: left;
-  left: 2%;
+  left: 2%
 }
 
 .navbar{
@@ -554,11 +554,11 @@ footer{
 }
 
 .blink {
-	-webkit-animation: blink 1s linear infinite;
-	-moz-animation: blink 1s linear infinite;
-	-ms-animation: blink 1s linear infinite;
-	-o-animation: blink 1s linear infinite;
-	 animation: blink 1s linear infinite;
+	-webkit-animation: blink 1.5s linear infinite;
+	-moz-animation: blink 1.5s linear infinite;
+	-ms-animation: blink 1.5s linear infinite;
+	-o-animation: blink 1.5s linear infinite;
+	 animation: blink 1.5s linear infinite;
 }
 @-webkit-keyframes blink {
 	0% { opacity: 1; }
