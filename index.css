@@ -41,7 +41,17 @@ body{
   padding: 0;
   line-height: 1em;
   z-index: 2;
-  position: relative;
+  position: absolute;
+}
+
+.backgroundWhite{
+  width: 35px;
+  height: 5px;
+  left: 65%;
+  background: white;
+  top: 97%;
+  z-index: 3;
+  position: absolute;
 }
 
 .navbar{
@@ -403,7 +413,7 @@ footer{
     min-height: 200px;
   }
   .intro_words{
-    left: 2%;
+    padding-left: 2%;
   }
 }
 

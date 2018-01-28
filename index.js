@@ -22,6 +22,9 @@ $('.intro_container').css("top",navBarHeight);
 $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight);
 console.log(windowHeight-navBarHeight-getDownButtonHeight);
 
+setInterval(function(){
+    $("#loadingRect").toggleClass("backgroundWhite");
+ },800)
 
 $("#section05").click(function() {
     $('html,body').animate({
