@@ -42,16 +42,9 @@ body{
   line-height: 1em;
   z-index: 2;
   position: absolute;
-}
-
-.backgroundWhite{
-  width: 35px;
-  height: 5px;
-  left: 65%;
-  background: white;
-  top: 97%;
-  z-index: 3;
-  position: absolute;
+  width: 100%;
+  text-align: left;
+  left: 2%;
 }
 
 .navbar{
@@ -200,12 +193,12 @@ a.navbar-button:active
 }
 
 .work_section{
-  background-color: rgba(18,18,18,0.4);
+  background-color: rgba(18,18,18,0.6);
   width: 100%;
 }
 
 .about_section{
-  background-color: rgba(18,18,18,0.5);
+  background-color: rgba(18,18,18,0.7);
   width: 100%;
   height: auto;
 }
@@ -373,19 +366,7 @@ footer{
 
 }
 
-
-.intro_words {
-  position: relative;
-  left: 2%;
-}
-
-.intro_words span {
-  position:absolute;
-  bottom:0;
-  right:0;
-}
-
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   /* .img-circle {
     margin-top: 13%;
   } */
@@ -393,8 +374,21 @@ footer{
     margin-top: 0.6em;
     margin-bottom: 0.6em;
   } */
+  .intro_container{
+    max-width: 60%;
+  }
+  .text_container{
+    max-width: 60%;
+  }
   .intro_words{
     left: 0;
+    max-width: 900px;
+  }
+  .item_stat_container{
+    margin-left: 100px;
+  }
+  .item_details2{
+    margin-right: 100px;
   }
 }
 
@@ -412,8 +406,14 @@ footer{
   .item_image_container3{
     min-height: 200px;
   }
-  .intro_words{
+  /* .intro_words{
     padding-left: 2%;
+  } */
+  .item_stat_container{
+    margin-left: 30px;
+  }
+  .item_details2{
+    margin-right: 30px;
   }
 }/*padding fix I hope*/
 
@@ -436,6 +436,9 @@ footer{
   .item_details2
   {
     order: 0;
+  }
+  .item_details2{
+    margin-right: 0;
   }
 }
 
@@ -548,4 +551,42 @@ footer{
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+.blink {
+	-webkit-animation: blink 1s linear infinite;
+	-moz-animation: blink 1s linear infinite;
+	-ms-animation: blink 1s linear infinite;
+	-o-animation: blink 1s linear infinite;
+	 animation: blink 1s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
 }
