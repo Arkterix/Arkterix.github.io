@@ -404,6 +404,14 @@ footer{
   {
     flex-wrap: wrap;
   }
+  .item_stat_container
+  {
+    order: 1;
+  }
+  .item_details2
+  {
+    order: 0;
+  }
 }
 
 @media (max-width: 674px) {
