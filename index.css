@@ -146,6 +146,13 @@ a.navbar-button:active
   background-image: none !important;
 }
 
+.intro_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  position: absolute;
+}
 
 .text_container{
   display: flex;
@@ -358,6 +365,7 @@ footer{
 
 .intro_words {
   position: relative;
+  left: 2%;
 }
 
 .intro_words span {

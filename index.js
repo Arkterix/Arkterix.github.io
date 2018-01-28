@@ -14,10 +14,12 @@ $(document).ready(main);
 var windowHeight = window.innerHeight;
 var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
+var getHelloWordHeight = $('.intro_words').height();
 $('.text_container').css("top", windowHeight-getDownButtonHeight);
 
-$('.intro_words').css("height",windowHeight-navBarHeight-getDownButtonHeight);
-$('.intro_words').css("margin-top",navBarHeight);
+$('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
+$('.intro_container').css("top",navBarHeight);
+$('.intro_words').css("top",windowHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight);
 console.log(windowHeight-navBarHeight-getDownButtonHeight);
 
 
