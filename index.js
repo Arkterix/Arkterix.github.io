@@ -19,7 +19,7 @@ $('.text_container').css("top", windowHeight-getDownButtonHeight);
 
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);
-$('.intro_words').css("top",windowHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight);
+$('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight);
 console.log(windowHeight-navBarHeight-getDownButtonHeight);
 
 
