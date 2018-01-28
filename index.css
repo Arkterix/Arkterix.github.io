@@ -477,6 +477,9 @@ footer{
   {
     margin-top: 10%;
   }
+  .item_stat_container{
+    margin: 2em;;
+  }
 }
 
 .demo a {
