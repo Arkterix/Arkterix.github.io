@@ -19,7 +19,7 @@ $('.text_container').css("top", windowHeight-getDownButtonHeight);
 
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);
-$('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight);
+$('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
 console.log(windowHeight-navBarHeight-getDownButtonHeight);
 
 $("#section05").click(function() {
@@ -58,17 +58,6 @@ var python = document.getElementById('python')
 var java = document.getElementById('java')
 var c = document.getElementById('c')
 var problemS = document.getElementById('problemS')
-
-// setTimeout(function(){
-//   md_dev.style.animation = "md_rec1 1s forwards"
-//   web_dev.style.animation = "md_rec2 1s forwards"
-//   ui_design.style.animation = "md_rec3 1s forwards"
-//   teamwork.style.animation = "md_rec4 1s forwards"
-//   python.style.animation = "md_rec5 1s forwards"
-//   java.style.animation = "md_rec6 1s forwards"
-//   c.style.animation = "md_rec7 1s forwards"
-//   problemS.style.animation = "md_rec8 1s forwards"
-// }, 500)
 
 var waypoint = new Waypoint({
   element: $('.item_stat_container'),
