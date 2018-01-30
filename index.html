@@ -42,7 +42,12 @@
   <div class="container">
 
     <div class = "intro_container">
+      <div id="icon"></div>
+      <h4 id = 'tempIndicator'><span id="Temperature"></span>C in Ottawa</h4>
+
+      <div id="icon"></div>
       <div class = "intro_words">
+
         <p>Hello World_</p>
         <!-- <p>Hello World<span class="blink">_</span></p> -->
       </div>
@@ -109,9 +114,9 @@
               <p><span class ="item_details_title" >Teacher's Assistant</span></p>
               <p>January 2018 – April 2018</p>
               <ul>
-                <li>Currently a Teacher's assistant for CISC 332 - Database Management Systems</li>
-                <li>Responsible for tutoring students on Data Models, Relational query languages, Relational database design, Application interfaces and embedded SQL, Storage and indexing.</li>
-                <li>Also responsible for marking assignments and projects</li>
+                <li class="detail_bullets">Currently a Teacher's assistant for CISC 332 - Database Management Systems</li>
+                <li class="detail_bullets">Responsible for tutoring students on Data Models, Relational query languages, Relational database design, Application interfaces and embedded SQL, Storage and indexing.</li>
+                <li class="detail_bullets">Also responsible for marking assignments and projects</li>
               </ul>
             </div>
           </div>
@@ -124,12 +129,12 @@
               <p><span class ="item_details_title" >Systems Analyst Intern</span></p>
               <p>January 2016 – December 2016</p>
               <ul>
-                <li>Assisted Enercare's IT team in the system development life cycle of multiple projects.</li>
-                <li>Developed and designed the ECFP Mobile App, a finance-based iOS iPad application built on the Xamarin platform. Helped to save the company over $2 million in costs.</li>
-                <li>Participated in the development of a prototype CRM system that utilized Big Data technologies like HDInsight and Apache Pig.</li>
-                <li>Set up SharePoint repositories for the IT Team.</li>
-                <li>Performed a variety of Data Profiling, Analysis and Cleansing work.</li>
-                <li>Created dynamic BI Dashboards using Tableau.</li>
+                <li class="detail_bullets">Assisted Enercare's IT team in the system development life cycle of multiple projects.</li>
+                <li class="detail_bullets">Developed and designed the ECFP Mobile App, a finance-based iOS iPad application built on the Xamarin platform. Helped to save the company over $2 million in costs.</li>
+                <li class="detail_bullets">Participated in the development of a prototype CRM system that utilized Big Data technologies like HDInsight and Apache Pig.</li>
+                <li class="detail_bullets">Set up SharePoint repositories for the IT Team.</li>
+                <li class="detail_bullets">Performed a variety of Data Profiling, Analysis and Cleansing work.</li>
+                <li class="detail_bullets">Created dynamic BI Dashboards using Tableau.</li>
               </ul>
             </div>
           </div>
@@ -143,10 +148,10 @@
               <p><span class ="item_details_title" >Information Management Administrative Assistant </span></p>
               <p>June 2015 – September 2015</p>
               <ul>
-                <li>Responsible for assisting in the Strategic Integration, Planning, and Coordination (SIPC) of the Labour Program.</li>
-                <li>Developed Java program that converted over 50,000 wrongly formatted file names into a specific department-issued format, saved employees from having to manually change file names.</li>
-                <li>Created a File Duplication Deletion program that utilized MD5 Checksums to determine duplicate files in a 5 Tb Directory and then delete them. Saved over 2 weeks’ worth of productivity for my team.</li>
-                <li>Created 3 Guides that helped to resolve common issues encountered by employees while using Excel.</li>
+                <li class="detail_bullets">Responsible for assisting in the Strategic Integration, Planning, and Coordination (SIPC) of the Labour Program.</li>
+                <li class="detail_bullets">Developed Java program that converted over 50,000 wrongly formatted file names into a specific department-issued format, saved employees from having to manually change file names.</li>
+                <li class="detail_bullets">Created a File Duplication Deletion program that utilized MD5 Checksums to determine duplicate files in a 5 Tb Directory and then delete them. Saved over 2 weeks’ worth of productivity for my team.</li>
+                <li class="detail_bullets">Created 3 Guides that helped to resolve common issues encountered by employees while using Excel.</li>
               </ul>
             </div>
           </div>
@@ -159,7 +164,7 @@
           <p>Let's work together!</p>
           <p> Feel free to connect with me through</p>
           <p><a style="color: #3b5998" href = "https://www.facebook.com/msn.world.andy">Facebook</a>,
-            <a style="color: #0077B5" href = "https://www.linkedin.com/in/andy-chu-work/">Linkedin</a>, or by <a class= "queens_orange" href = "andy.chuatwork@gmail.com">Email</a>.</p>
+            <a style="color: #0077B5" href = "https://www.linkedin.com/in/andy-chu-work/">Linkedin</a>, or by <a class= "queens_orange" href = "mailto:andy.chuatwork@gmail.com">Email</a>.</p>
           </p>
         </span>
       </div>
@@ -176,6 +181,7 @@
   </div>
 
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="./weather.js"></script>
   <script src="./jquery.waypoints.js"></script>
   <script src='./index.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

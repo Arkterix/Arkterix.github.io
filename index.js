@@ -15,12 +15,19 @@ var windowHeight = window.innerHeight;
 var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
-$('.text_container').css("top", windowHeight-getDownButtonHeight);
+var getIconWidth = $('#icon').width();
 
+
+
+$('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-getIconWidth-10);
+$('#tempIndicator').css("left", getIconWidth-3);
+
+$('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-getIconWidth-10);
+
+$('.text_container').css("top", windowHeight-getDownButtonHeight);
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);
 $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
-console.log(windowHeight-navBarHeight-getDownButtonHeight);
 
 $("#section05").click(function() {
     $('html,body').animate({
@@ -62,7 +69,6 @@ var problemS = document.getElementById('problemS')
 var waypoint = new Waypoint({
   element: $('.item_stat_container'),
   handler: function(direction) {
-    console.log('Basic waypoint triggered');
     setTimeout(function(){
       md_dev.style.animation = "md_rec1 1s forwards"
       web_dev.style.animation = "md_rec2 1s forwards"

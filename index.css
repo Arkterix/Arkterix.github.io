@@ -152,7 +152,7 @@ a.navbar-button:active
 .intro_container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   width:100%;
   position: absolute;
 }
@@ -238,7 +238,12 @@ a.navbar-button:active
 
 .stat_bullets
 {
-  "margin: 0px 0;
+  margin: 0px 0;
+}
+
+.detail_bullets
+{
+  margin: 5px 0;
 }
 
 .contact_section{
@@ -483,6 +488,20 @@ footer{
   .contact_section{
     font-size: 0.8em;
   }
+}
+
+#tempIndicator{
+  z-index: 3;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+#icon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
 }
 
 .demo a {
