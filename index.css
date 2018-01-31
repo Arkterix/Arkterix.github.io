@@ -151,11 +151,40 @@ a.navbar-button:active
 
 .intro_container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: left;
   width:100%;
   position: absolute;
 }
+
+#tempIndicator{
+  z-index: 3;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  left: 8%;
+}
+
+#dateIndicator{
+  z-index: 3;
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  left: 3%;
+}
+
+#icon{
+  position: absolute;
+  left: 3%;
+}
+
+.weatherIcon{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  z-index: 3;
+}
+
 
 /*Changed background*/
 .text_container{
@@ -279,6 +308,11 @@ footer{
 .item_section2
 {
   margin: 40px;
+}
+
+.skills
+{
+  text-align: center;
 }
 
 .item_container2
@@ -445,6 +479,9 @@ footer{
   .item_details2{
     margin-right: 0;
   }
+  #tempIndicator{
+    left: 14%;
+  }
 }
 
 @media (max-width: 674px) {
@@ -488,20 +525,15 @@ footer{
   .contact_section{
     font-size: 0.8em;
   }
-}
-
-#tempIndicator{
-  z-index: 3;
-  position: relative;
-  font-family: 'Lato', sans-serif;
-  color: white;
-}
-
-#icon{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  z-index: 3;
+  .item_image_container1{
+    min-height: 180px;
+  }
+  .item_image_container2{
+    min-height: 100px;
+  }
+  .item_image_container3{
+    min-height: 100px;
+  }
 }
 
 .demo a {

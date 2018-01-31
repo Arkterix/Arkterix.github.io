@@ -42,12 +42,12 @@
   <div class="container">
 
     <div class = "intro_container">
-      <div id="icon"></div>
-      <h4 id = 'tempIndicator'><span id="Temperature"></span>C in Ottawa</h4>
 
+      <h3 id = 'dateIndicator'><span id ="Date"></span></h3>
       <div id="icon"></div>
+      <h4 id = 'tempIndicator'><span id="Temperature"></span>C <span style = "font-size: 0.7em;">in Ottawa</span></h4>
+
       <div class = "intro_words">
-
         <p>Hello World_</p>
         <!-- <p>Hello World<span class="blink">_</span></p> -->
       </div>
@@ -112,12 +112,15 @@
             <div class = "item_image_container1"></div>
             <div class = "item_details">
               <p><span class ="item_details_title" >Teacher's Assistant</span></p>
-              <p>January 2018 – April 2018</p>
+              <p>January – April 2018</p>
               <ul>
                 <li class="detail_bullets">Currently a Teacher's assistant for CISC 332 - Database Management Systems</li>
                 <li class="detail_bullets">Responsible for tutoring students on Data Models, Relational query languages, Relational database design, Application interfaces and embedded SQL, Storage and indexing.</li>
                 <li class="detail_bullets">Also responsible for marking assignments and projects</li>
               </ul>
+              <div class = "skills">
+                <h5>SQL / MySQL / HTML / CSS / JavaScript</h5>
+              </div>
             </div>
           </div>
         </section>
@@ -127,15 +130,17 @@
             <div class = "item_image_container2"></div>
             <div class = "item_details">
               <p><span class ="item_details_title" >Systems Analyst Intern</span></p>
-              <p>January 2016 – December 2016</p>
+              <p>January – December 2016</p>
               <ul>
-                <li class="detail_bullets">Assisted Enercare's IT team in the system development life cycle of multiple projects.</li>
                 <li class="detail_bullets">Developed and designed the ECFP Mobile App, a finance-based iOS iPad application built on the Xamarin platform. Helped to save the company over $2 million in costs.</li>
                 <li class="detail_bullets">Participated in the development of a prototype CRM system that utilized Big Data technologies like HDInsight and Apache Pig.</li>
                 <li class="detail_bullets">Set up SharePoint repositories for the IT Team.</li>
-                <li class="detail_bullets">Performed a variety of Data Profiling, Analysis and Cleansing work.</li>
+                <li class="detail_bullets">Performed a variety of Data Profiling, Analysis and Cleansing work on Oracle 9i and SQL Server 2005 databases.</li>
                 <li class="detail_bullets">Created dynamic BI Dashboards using Tableau.</li>
               </ul>
+              <div class = "skills">
+                <h5>Xamarin / Xcode / SQL / C# / Python</h5>
+              </div>
             </div>
           </div>
         </section>
@@ -146,13 +151,16 @@
             </div>
             <div class = "item_details">
               <p><span class ="item_details_title" >Information Management Administrative Assistant </span></p>
-              <p>June 2015 – September 2015</p>
+              <p>June – September 2015</p>
               <ul>
                 <li class="detail_bullets">Responsible for assisting in the Strategic Integration, Planning, and Coordination (SIPC) of the Labour Program.</li>
-                <li class="detail_bullets">Developed Java program that converted over 50,000 wrongly formatted file names into a specific department-issued format, saved employees from having to manually change file names.</li>
+                <li class="detail_bullets">Developed a Java program that implemented an algorithm to convert over 50,000 wrongly formatted file names into a specific department-issued format, saved employees from heavy and costly manual work.</li>
                 <li class="detail_bullets">Created a File Duplication Deletion program that utilized MD5 Checksums to determine duplicate files in a 5 Tb Directory and then delete them. Saved over 2 weeks’ worth of productivity for my team.</li>
-                <li class="detail_bullets">Created 3 Guides that helped to resolve common issues encountered by employees while using Excel.</li>
+                <li class="detail_bullets">Created 3 technical guides that helped to resolve common issues encountered by employees while using Excel.</li>
               </ul>
+              <div class = "skills">
+                <h5>Java / SQL / Excel</h5>
+              </div>
             </div>
           </div>
         </section>
@@ -181,6 +189,7 @@
   </div>
 
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="./moment.js"></script>
   <script src="./weather.js"></script>
   <script src="./jquery.waypoints.js"></script>
   <script src='./index.js'></script>

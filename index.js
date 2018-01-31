@@ -15,15 +15,11 @@ var windowHeight = window.innerHeight;
 var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
-var getIconWidth = $('#icon').width();
 
+$('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-110);
 
-
-$('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-getIconWidth-10);
-$('#tempIndicator').css("left", getIconWidth-3);
-
-$('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-getIconWidth-10);
-
+$('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
+$('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-75);
 $('.text_container').css("top", windowHeight-getDownButtonHeight);
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);
