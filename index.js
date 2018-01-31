@@ -16,9 +16,9 @@ var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
 
-$('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-110);
+$('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
 
-$('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
+$('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-100);
 $('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-75);
 $('.text_container').css("top", windowHeight-getDownButtonHeight);
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);

@@ -162,7 +162,7 @@ a.navbar-button:active
   position: relative;
   font-family: 'Lato', sans-serif;
   color: white;
-  left: 8%;
+  left: 7.5%;
 }
 
 #dateIndicator{
@@ -480,7 +480,7 @@ footer{
     margin-right: 0;
   }
   #tempIndicator{
-    left: 14%;
+    left: 13%;
   }
 }
 
