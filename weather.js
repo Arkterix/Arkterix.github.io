@@ -125,10 +125,5 @@ function determineIcon(codeID)
         document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/04n.png\"/>";
       }
     }
-
-    //FIX, need night time
   }
 }
-
-var date = moment().format("dddd, MMMM Do");
-document.getElementById('Date').innerHTML = date;
