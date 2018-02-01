@@ -1,12 +1,15 @@
 function main() {
-  $('.page-title').hide();
-  $('.page-title').fadeIn(1000);
+  $(".intro_words").hide();
+  $(".intro_words").fadeIn(2000);
 
-  $('.img-circle').hide();
-  $('.img-circle').fadeIn(1000);
+  $('#dateIndicator').hide();
+  $('#dateIndicator').fadeIn(2000);
 
-  $('.intro_words').hide();
-  $('.intro_words').fadeIn(1000);
+  $('#icon').hide();
+  $('#icon').fadeIn(2000);
+
+  $('#tempIndicator').hide();
+  $('#tempIndicator').fadeIn(2000);
 }
 
 $(document).ready(main);
@@ -62,7 +65,43 @@ var java = document.getElementById('java')
 var c = document.getElementById('c')
 var problemS = document.getElementById('problemS')
 
-var waypoint = new Waypoint({
+var waypoints1 = new Waypoint(
+{
+  element: $('.text_container'),
+  handler: function(direction)
+  {
+    if (direction == 'down')
+    {
+      setTimeout(function(){
+        $(".intro_words").fadeOut();
+        $('#dateIndicator').fadeOut();
+        $('#icon').fadeOut();
+        $('#tempIndicator').fadeOut();
+      }, 50)
+    }
+  },
+  offset: windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40
+})
+
+var waypoints2 = new Waypoint(
+{
+  element: $('.text_container'),
+  handler: function(direction)
+  {
+    if (direction == 'up')
+    {
+      setTimeout(function(){
+        $(".intro_words").fadeIn();
+        $('#dateIndicator').fadeIn();
+        $('#icon').fadeIn();
+        $('#tempIndicator').fadeIn();
+      }, 300)
+    }
+  },
+  offset: windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40
+})
+
+var waypoint3 = new Waypoint({
   element: $('.item_stat_container'),
   handler: function(direction) {
     setTimeout(function(){

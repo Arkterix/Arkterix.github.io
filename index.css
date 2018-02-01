@@ -154,7 +154,8 @@ a.navbar-button:active
   flex-direction: row;
   align-items: left;
   width:100%;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
 }
 
 #tempIndicator{
@@ -536,6 +537,7 @@ footer{
     min-height: 100px;
   }
 }
+
 
 .demo a {
   position: relative;

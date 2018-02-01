@@ -130,5 +130,5 @@ function determineIcon(codeID)
   }
 }
 
-var date = moment().format("dddd MMMM Do");
+var date = moment().format("dddd, MMMM Do");
 document.getElementById('Date').innerHTML = date;
