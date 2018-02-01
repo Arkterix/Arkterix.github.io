@@ -33,6 +33,9 @@ getTime.onreadystatechange = function isDayOrNight()
     var sunrise = parseInt(timeArray.sunrise.slice(11,13));
     var sunset = parseInt(timeArray.sunset.slice(11,13));
     var currentTime = parseInt(timeArray.time.slice(11,13));
+    var year = parseInt(timeArray.time.slice(0,4));
+
+    document.getElementById('year').innerHTML = year;
 
     if(between(currentTime,sunrise,sunset) == true)
     {

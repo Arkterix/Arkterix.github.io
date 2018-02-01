@@ -37,7 +37,7 @@ $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight
 $('.intro_container').css("top",navBarHeight);
 $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
 
-$("#section05").click(function() {
+$(".dropdown_section").click(function() {
     $('html,body').animate({
         scrollTop: $(".about_section").offset().top - navBarHeight},
         'slow');
