@@ -1,23 +1,25 @@
-function main() {
-  $(".intro_words").hide();
-  $(".intro_words").fadeIn(2000);
-
-  $('#dateIndicator').hide();
-  $('#dateIndicator').fadeIn(2000);
-
-  $('#icon').hide();
-  $('#icon').fadeIn(2000);
-
-  $('#tempIndicator').hide();
-  $('#tempIndicator').fadeIn(2000);
-}
-
-$(document).ready(main);
-
 var windowHeight = window.innerHeight;
 var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
+
+function main() {
+
+    $(".intro_words").hide();
+    $(".intro_words").fadeIn(2000);
+
+    $('#dateIndicator').hide();
+    $('#dateIndicator').fadeIn(2000);
+
+    $('#icon').hide();
+    $('#icon').fadeIn(2000);
+
+    $('#tempIndicator').hide();
+    $('#tempIndicator').fadeIn(2000);
+
+}
+
+$(document).ready(main);
 
 if (window.innerWidth <= 674){
   var date = moment().format("dddd,<br>MMMM Do");
