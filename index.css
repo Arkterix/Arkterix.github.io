@@ -139,10 +139,13 @@ a.navbar-button:active
   text-align: center;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a{
     color: white !important;
     line-height: 26px !important;
+}
 
+.navbar-nav>li>a{
+  padding: 15px 10px !important;
 }
 
 .navbar-inverse{
@@ -226,6 +229,13 @@ a.navbar-button:active
   line-height: 180%;
 }
 
+.project_section{
+  background-color: rgba(18,18,18,0.8);
+  width: 100%;
+  -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+  box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+}
 .work_section{
   background-color: rgba(18,18,18,0.8);
   width: 100%;
@@ -325,6 +335,15 @@ footer{
   margin-top: 3%;
 }
 
+.project_title{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
 .item_section
 {
   margin: 40px;
@@ -336,9 +355,25 @@ footer{
   margin: 40px;
 }
 
-.skills
-{
-  text-align: center;
+.skill {
+    border: 1px solid #FFF;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.33333em;
+    padding: 7px 14px;
+    margin-top: 0.8em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+a:focus{
+    text-decoration: none;
 }
 
 .item_container2
@@ -355,7 +390,7 @@ footer{
   flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
-  background-color: rgba(100,100,100,0.1);
+  background-color: rgba(40,40,40,0.3);
 }
 
 .item_stat_container
@@ -370,13 +405,24 @@ footer{
   -webkit-padding-start: 0px;
 }
 
+.item_image_container_project_1{
+  background-image: url("./images/Enercare_Project.jpg");
+  background-position: center center;
+  background-size: cover;
+  flex-basis: 35%;
+  flex-grow: 1;
+  max-width: 280px;
+  min-width: 280px;
+  min-height: 300px;
+}
+
 .item_image_container1
 {
   background-image: url("./images/QueensU_crest.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  min-width: 280px;
+  min-width: 260px;
   margin: 2em;
 }
 
@@ -386,7 +432,7 @@ footer{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  min-width: 280px;
+  min-width: 260px;
   margin: 2em;
 }
 
@@ -396,7 +442,7 @@ footer{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  min-width: 280px;
+  min-width: 260px;
   margin: 2em;
 }
 
@@ -433,13 +479,6 @@ footer{
 }
 
 @media (min-width: 1200px) {
-  /* .img-circle {
-    margin-top: 13%;
-  } */
-  /* .intro_words{
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-  } */
   .intro_container{
     max-width: 60%;
   }
@@ -455,6 +494,9 @@ footer{
   }
   .item_details2{
     margin-right: 50px;
+  }
+  #tempIndicator{
+    left: 8.5%;
   }
 }
 
@@ -472,25 +514,12 @@ footer{
   .item_image_container3{
     min-height: 200px;
   }
-  /* .intro_words{
-    padding-left: 2%;
-  } */
-  .item_stat_container{
-    margin-left: 30px;
+  .skill_align{
+    text-align: center;
   }
-  .item_details2{
-    margin-right: 30px;
-  }
-}/*padding fix I hope*/
+}
 
 @media (max-width: 766px) {
-  /* .img-circle {
-    margin-top: 16%;
-  } */
-  /* .intro_words{
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-  } */
   .item_container2
   {
     flex-wrap: wrap;
@@ -508,6 +537,9 @@ footer{
   }
   #tempIndicator{
     left: 13%;
+  }
+  .navbar-nav>li>a{
+    padding: 10px 10px !important;
   }
 }
 
@@ -560,6 +592,10 @@ footer{
   }
   .item_image_container3{
     min-height: 100px;
+  }
+  .item_image_container_project_1{
+    max-height: 240px !important;
+    width:100%;
   }
 }
 

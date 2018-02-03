@@ -45,6 +45,12 @@ $(".dropdown_section").click(function() {
         'slow');
 });
 
+$("#projectButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".project_section").offset().top - navBarHeight},
+        'slow');
+});
+
 $("#workButton").click(function() {
     $('html,body').animate({
         scrollTop: $(".work_section").offset().top - navBarHeight},
