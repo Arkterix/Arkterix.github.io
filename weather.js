@@ -5,23 +5,10 @@ var getWeather = new XMLHttpRequest();
 var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=6094817&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric';
 var getTime = new XMLHttpRequest();
 var timeURL = 'http://api.geonames.org/timezoneJSON?lat=45.4&lng=-75.7&username=chuy009'
-var day = true;
+var day; //default
 
-getWeather.onreadystatechange = function()
-{
-  if (this.readyState == 4 && this.status == 200)
-  {
-    var weatherArray = JSON.parse(this.responseText);
-
-    determineIcon(weatherArray.weather["0"].id);
-
-    var temp = Number(Math.round(weatherArray.main.temp+'e1')+'e-1');
-
-    document.getElementById('Temperature').innerHTML = temp;
-  }
-}
-getWeather.open("GET", weatherURL, true);
-getWeather.send();
+getTime.open("GET", timeURL, true);
+getTime.send();
 
 getTime.onreadystatechange = function isDayOrNight()
 {
@@ -29,7 +16,7 @@ getTime.onreadystatechange = function isDayOrNight()
   {
     var timeArray = JSON.parse(this.responseText);
 
-    //only taking hours into consideration, not minutes
+    // only taking hours into consideration, not minutes
     var sunrise = parseInt(timeArray.sunrise.slice(11,13));
     var sunset = parseInt(timeArray.sunset.slice(11,13));
     var currentTime = parseInt(timeArray.time.slice(11,13));
@@ -44,10 +31,25 @@ getTime.onreadystatechange = function isDayOrNight()
     else {
       day = false;
     }
+
+    getWeather.open("GET", weatherURL, true);
+    getWeather.send();
   }
 }
-getTime.open("GET", timeURL, true);
-getTime.send();
+
+getWeather.onreadystatechange = function getIcon()
+{
+  if (this.readyState == 4 && this.status == 200)
+  {
+    var weatherArray = JSON.parse(this.responseText);
+
+    determineIcon(weatherArray.weather["0"].id);
+
+    var temp = Number(Math.round(weatherArray.main.temp+'e1')+'e-1');
+
+    document.getElementById('Temperature').innerHTML = temp;
+  }
+}
 
 function between(x, min, max) {
   if (x >= min && x <= max)
