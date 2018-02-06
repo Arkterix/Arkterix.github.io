@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,900" rel="stylesheet">
   <title>Andy Chu - Software Developer</title>
@@ -41,15 +40,15 @@
 
 
   <div class="container">
-
     <div class = "intro_container">
+      <div class = "weatherDiv">
+        <div id="icon"></div>
+        <h4 id = 'tempIndicator'><span id="Temperature"></span>C <span style = "font-size: 0.7em;">in Ottawa</span></h4>
+      </div>
 
       <h3 id = 'dateIndicator'><span id ="Date"></span></h3>
-      <div id="icon"></div>
-      <h4 id = 'tempIndicator'><span id="Temperature"></span>C <span style = "font-size: 0.7em;">in Ottawa</span></h4>
-
       <div class = "intro_words">
-        <p>Hello World_</p>
+        Hello World_
       </div>
     </div>
 
@@ -62,8 +61,6 @@
       </div>
 
       <div class = "about_section">
-        <!-- <h2 class ="work_title">Hi there!</h2> -->
-
         <section class = "item_section2">
           <img class= "img-circle" src = './images/Profile_Pic.jpg'>
 
@@ -114,10 +111,10 @@
             <div class = "item_image_container_project_1"></div>
             <div class = "item_details" style="padding: 1.7em;">
               <p class ="item_details_title">ECFP Mobile App</p>
-              <p style ="margin-top: 10px;"> The ECFP Mobile App was built on the Xamarin Platform, and partly
-                designed using the Interface Builder editor within Xcode. The codebase was written in C#.
+              <p style ="margin-top: 10px;"> The ECFP Mobile App is an iOS based tablet application built on the Xamarin Platform
+                and partly designed using the Interface Builder editor within Xcode. The codebase was written in C#.
                 I was responsible for designing the user interface and also participated extensively in the development
-                and testing stages of this tablet-based app.
+                and testing stages of this app.
               </p>
               <div class = "skill_align">
                 <span class = "skill">Xamarin</span>
@@ -125,6 +122,32 @@
                 <span class = "skill">C#</span>
                 <span class = "skill">Photoshop</span>
                 <span class = "skill">Git</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class = "item_section">
+          <div class = "item_container">
+            <div class = "item_image_container_project_2"></div>
+            <div class = "item_details" style="padding: 1.7em;">
+              <p class ="item_details_title">K-Town Car Share</p>
+              <p style ="margin-top: 10px;"> KTCS is a web-based application built as my final project in my Database Management class.
+                It is intended to serve as a mock car-sharing platform, utilizing a frontend web-based
+                application and a supporting backend database. My application is designed to
+                mimic the real-life customer functionalities of a car-sharing platform, like reserving
+                and dropping off a car. It is also designed to mimic common administrative
+                functionalities like searching for available cars in the fleet and generating monthly
+                customer invoices.
+              </p>
+              <div class = "skill_align">
+                <span class = "skill">SQL</span>
+                <span class = "skill">MySQL</span>
+                <span class = "skill">PHP</span>
+                <span class = "skill">HTML</span>
+                <span class = "skill">JavaScript</span>
+                <span class = "skill">CSS</span>
+                <span class = "skill">Bootstrap</span>
               </div>
             </div>
           </div>
@@ -223,6 +246,8 @@
       </footer>
     </div>
 
+    <div class = "blur_text_container">
+    </div>
     <div class = "background">
     </div>
   </div>

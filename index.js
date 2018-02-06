@@ -2,6 +2,10 @@ var windowHeight = window.innerHeight;
 var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
+var getTextContainerHeight = $('.text_container').height();
+var getTextContainerWidth = $('.text_container').width();
+
+
 
 function main() {
 
@@ -31,9 +35,14 @@ else {
 }
 document.getElementById('Date').innerHTML = date;
 
-$('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
-$('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-100);
+// $('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
+// $('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-100);
 
+$('.blur_text_container').css("top", windowHeight-getDownButtonHeight);
+$('.blur_text_container').css("height", getTextContainerHeight);
+$('.blur_text_container').css("width", getTextContainerWidth);
+
+$('.weatherDiv').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
 $('.text_container').css("top", windowHeight-getDownButtonHeight);
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);

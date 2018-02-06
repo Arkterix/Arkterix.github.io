@@ -1,5 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400regular); */
-
 .yeti_blue {
   color: #009CA3;
 }
@@ -144,6 +142,10 @@ a.navbar-button:active
     line-height: 26px !important;
 }
 
+.navbar-toggle:focus{
+  background-color: transparent !important;
+}
+
 .navbar-nav>li>a{
   padding: 15px 10px !important;
 }
@@ -172,7 +174,7 @@ a.navbar-button:active
   position: relative;
   font-family: 'Lato', sans-serif;
   color: white;
-  left: 7.5%;
+  left: 40px;
 }
 
 #dateIndicator{
@@ -185,7 +187,7 @@ a.navbar-button:active
 
 #icon{
   position: absolute;
-  left: 3%;
+  left: 0;
 }
 
 .weatherIcon{
@@ -193,6 +195,13 @@ a.navbar-button:active
   width: 35px;
   height: 35px;
   z-index: 3;
+}
+
+.weatherDiv
+{
+  position: absolute;
+  width: 100%;
+  left: 3%;
 }
 
 
@@ -207,6 +216,14 @@ a.navbar-button:active
   z-index: 2;
   font-family: 'Open Sans', sans-serif;
   color: white;
+}
+
+.blur_text_container{
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(22,22,22);
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .background{
@@ -235,6 +252,9 @@ a.navbar-button:active
   -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .work_section{
   background-color: rgba(18,18,18,0.8);
@@ -242,6 +262,9 @@ a.navbar-button:active
   -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about_section{
@@ -251,6 +274,9 @@ a.navbar-button:active
   -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact_section{
@@ -263,6 +289,9 @@ a.navbar-button:active
   -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.5);
   box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dropdown_section{
@@ -279,35 +308,35 @@ a.navbar-button:active
 
 @keyframes md_rec1 {
     0%   {width: 0px;}
-    100% {width: 125px;}
+    100% {width: 115px;}
 }
 @keyframes md_rec2 {
     0%   {width: 0px;}
-    100% {width: 140px;}
+    100% {width: 150px;}
 }
 @keyframes md_rec3 {
     0%   {width: 0px;}
-    100% {width: 130px;}
+    100% {width: 125px;}
 }
 @keyframes md_rec4 {
     0%   {width: 0px;}
-    100% {width: 120px;}
+    100% {width: 115px;}
 }
 @keyframes md_rec5 {
     0%   {width: 0px;}
-    100% {width: 105px;}
+    100% {width: 100px;}
 }
 @keyframes md_rec6 {
     0%   {width: 0px;}
-    100% {width: 120px;}
+    100% {width: 115px;}
 }
 @keyframes md_rec7 {
     0%   {width: 0px;}
-    100% {width: 80px;}
+    100% {width: 75px;}
 }
 @keyframes md_rec8 {
     0%   {width: 0px;}
-    100% {width: 110px;}
+    100% {width: 105px;}
 }
 
 .stat_bullets
@@ -346,6 +375,7 @@ footer{
 
 .item_section
 {
+  max-width: 86%;
   margin: 40px;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
 }
@@ -353,6 +383,7 @@ footer{
 .item_section2
 {
   margin: 40px;
+  max-width: 86%;
 }
 
 .skill {
@@ -416,6 +447,17 @@ a:focus{
   min-height: 300px;
 }
 
+.item_image_container_project_2{
+  background-image: url("./images/KTCS_Project.png");
+  background-position: center center;
+  background-size: cover;
+  flex-basis: 35%;
+  flex-grow: 1;
+  max-width: 280px;
+  min-width: 280px;
+  min-height: 300px;
+}
+
 .item_image_container1
 {
   background-image: url("./images/QueensU_crest.png");
@@ -469,7 +511,7 @@ a:focus{
 
 .MD_rectangle{
   position: relative;
-  max-width: 140px;
+  max-width: 160px;
   height: 11px;
   left: 120px;
   top: -13px;
@@ -495,9 +537,9 @@ a:focus{
   .item_details2{
     margin-right: 50px;
   }
-  #tempIndicator{
+  /* #tempIndicator{
     left: 8.5%;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
@@ -535,9 +577,9 @@ a:focus{
   .item_details2{
     margin-right: 0;
   }
-  #tempIndicator{
+  /* #tempIndicator{
     left: 13%;
-  }
+  } */
   .navbar-nav>li>a{
     padding: 10px 10px !important;
   }
