@@ -1,11 +1,10 @@
 var windowHeight = window.innerHeight;
+var windowWidth = window.innerWidth;
 var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
 var getTextContainerHeight = $('.text_container').height();
 var getTextContainerWidth = $('.text_container').width();
-
-
 
 function main() {
 
@@ -35,8 +34,7 @@ else {
 }
 document.getElementById('Date').innerHTML = date;
 
-// $('#icon').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
-// $('#tempIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-100);
+$('.twinkling').css("height", windowHeight-getHelloWordHeight);
 
 $('.blur_text_container').css("top", windowHeight-getDownButtonHeight);
 $('.blur_text_container').css("height", getTextContainerHeight);
@@ -99,10 +97,12 @@ var waypoints1 = new Waypoint(
     if (direction == 'down')
     {
       setTimeout(function(){
-        $(".intro_words").fadeOut();
+        $('.intro_words').fadeOut();
         $('#dateIndicator').fadeOut();
         $('#icon').fadeOut();
         $('#tempIndicator').fadeOut();
+        $('.credits').fadeOut();
+        $('.navbar').toggleClass('menublack');
       }, 30)
     }
   },
@@ -121,7 +121,9 @@ var waypoints2 = new Waypoint(
         $('#dateIndicator').fadeIn();
         $('#icon').fadeIn();
         $('#tempIndicator').fadeIn();
-      }, 300)
+        $('.credits').fadeIn();
+        $('.navbar').removeClass('menublack');
+      }, 30)
     }
   },
   offset: windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40
