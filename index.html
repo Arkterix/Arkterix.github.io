@@ -22,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <h1 class="page-title">Andy Chu</h1>
+        <h1 class="page-title"><a id= "homeLink" href="#">Andy Chu</a></h1>
       </div>
 
       <div class="collapse navbar-collapse" id="andyNavbar">
@@ -37,13 +37,11 @@
     </div>
   </nav>
 
-
-
   <div class="container">
     <div class = "intro_container">
       <div class = "weatherDiv">
         <div id="icon"></div>
-        <h4 id = 'tempIndicator'><span id="Temperature"></span>C <span style = "font-size: 0.7em;">in Ottawa</span></h4>
+        <h4 id = 'tempIndicator'><span id="Temperature"></span>C <span style = "font-size: 0.7em;">in Kingston</span></h4>
       </div>
 
       <h3 id = 'dateIndicator'><span id ="Date"></span></h3>
@@ -67,37 +65,39 @@
           <div class = "item_container2">
             <div class = "item_stat_container">
               <ul class = "stats">
-                <li class = "stat_bullets">Mobile Development</li>
-                <div id='md_dev' class = "MD_rectangle" style="width:0px"></div>
-
                 <li class = "stat_bullets">Web Development</li>
                 <div id='web_dev' class = "MD_rectangle" style="width:0px"></div>
 
                 <li class = "stat_bullets">UI/UX Design</li>
                 <div id='ui_design' class = "MD_rectangle" style="width:0px"></div>
 
-                <li class = "stat_bullets">Teamwork</li>
-                <div id='teamwork' class = "MD_rectangle" style="width:0px"></div>
-
-                <li class = "stat_bullets">Python</li>
-                <div id='python' class = "MD_rectangle" style="width:0px"></div>
+                <li class = "stat_bullets">Mobile Development</li>
+                <div id='md_dev' class = "MD_rectangle" style="width:0px"></div>
 
                 <li class = "stat_bullets">Java</li>
                 <div id='java'class = "MD_rectangle" style = "width: 0px"></div>
 
-                <li class = "stat_bullets">C</li>
-                <div id='c' class = "MD_rectangle" style = "width: 0px"></div>
+                <li class = "stat_bullets">Teamwork</li>
+                <div id='teamwork' class = "MD_rectangle" style="width:0px"></div>
 
                 <li class = "stat_bullets">Problem Solving</li>
                 <div id='problemS' class = "MD_rectangle" style = "width: 0px"></div>
+
+                <li class = "stat_bullets">Python</li>
+                <div id='python' class = "MD_rectangle" style="width:0px"></div>
+
+                <li class = "stat_bullets">C</li>
+                <div id='c' class = "MD_rectangle" style = "width: 0px"></div>
               </ul>
             </div>
 
             <div class = "item_details2">
-              <p class="intro_text">I'm a <span class= "yeti_blue">Software Design</span> student
-                in the <span class= "black_diamond_blue">School of Computing</span> at
-                <span class= "queens_orange">Queen's University</span>. My passion is building progressive and great software products. I'd probably love to work for you, unless you want me to design a school yearbook... I won't do that.
+              <p class="intro_text">I'm a 4th year student
+                in the <a id='intro_text_a' style= "color: #4885f9;" href = "http://www.cs.queensu.ca/" target="_blank">School of Computing</a> at
+                <a id='intro_text_a' style= "color: #fca10f" href = "http://www.queensu.ca/" target="_blank">Queen's University</a>, expected to graduate in Summer of 2018. My passion is building intuitive and great software products. I'd probably love to work for you, unless you want me to design a school yearbook... I won't do that.
               </p>
+
+
             </div>
           </div>
         </section>
@@ -163,7 +163,8 @@
             <div class = "item_image_container1"></div>
             <div class = "item_details">
               <p class ="item_details_title" >Teacher's Assistant</p>
-              <p><span style = "font-size: 1.3em;">Queen's University</span></p>
+              <!-- <p><span style = "font-size: 1.3em;">Queen's University</span></p> -->
+              <a id='intro_text_a' style= "color: white; font-size: 1.3em;" href = "http://www.queensu.ca/" target="_blank">Queen's University</a>
               <ul>
                 <li class="detail_bullets">Currently a Teacher's assistant for CISC 332 - Database Management Systems</li>
                 <li class="detail_bullets">Responsible for tutoring students on Data Models, Relational query languages, Relational database design, Application interfaces and embedded SQL, Storage and indexing.</li>
@@ -185,7 +186,8 @@
             <div class = "item_image_container2"></div>
             <div class = "item_details">
               <p class ="item_details_title" >Systems Analyst Intern</p>
-              <p><span style = "font-size: 1.3em;">Enercare Inc.</span></p>
+              <a id='intro_text_a' style= "color: white; font-size: 1.3em;" href = "https://www.enercare.ca/" target="_blank">Enercare Inc.</a>
+              <!-- <p><span style = "font-size: 1.3em;">Enercare Inc.</span></p> -->
               <ul>
                 <li class="detail_bullets">Developed and designed the ECFP Mobile App, a finance-based iOS iPad application built on the Xamarin platform. Helped to save the company over $2 million in costs.</li>
                 <li class="detail_bullets">Participated in the development of a prototype CRM system that utilized Big Data technologies like HDInsight and Apache Pig.</li>
@@ -212,7 +214,8 @@
             </div>
             <div class = "item_details">
               <p class ="item_details_title" >Information Management Administrative Assistant</p>
-              <p><span style = "font-size: 1.3em;">Employment and Social Development Canada</span></p>
+              <a id='intro_text_a' style= "color: white; font-size: 1.3em;" href = "https://www.canada.ca/en/employment-social-development.html" target="_blank">Employment and Social Development Canada</a>
+              <!-- <p><span style = "font-size: 1.3em;">Employment and Social Development Canada</span></p> -->
               <ul>
                 <li class="detail_bullets">Developed a Java program that implemented an algorithm to convert over 50,000 wrongly formatted file names into a specific department-issued format, saved employees from heavy and costly manual work.</li>
                 <li class="detail_bullets">Created a File Duplication Deletion program that utilized MD5 Checksums to determine duplicate files in a 5 Tb Directory and then delete them. Saved over 2 weeks’ worth of productivity for my team.</li>
@@ -232,12 +235,14 @@
       <div class = "contact_section">
         <h2 class ="work_title" style="margin-bottom: 30px">Contact</h2>
         <span style = "font-size: 1.5em;">
+        <div class="cool-link">
           <p>Let's work together!</p>
           <p> Feel free to connect with me through</p>
-          <p><a style="color: #3b5998" href = "https://www.facebook.com/msn.world.andy" target="_blank">Facebook</a>,
-            <a style="color: #0077B5" href = "https://www.linkedin.com/in/andy-chu-work/" target="_blank">Linkedin</a>
-            , or by <a class= "queens_orange" href = "mailto:andy.chuatwork@gmail.com">Email</a>.</p>
+          <p><a id='intro_text_a' style="color: #3b5998" href = "https://www.facebook.com/msn.world.andy" target="_blank">Facebook</a>,
+            <a id='intro_text_a' style="color: #0077B5" href = "https://www.linkedin.com/in/andy-chu-work/" target="_blank">Linkedin</a>
+            , or by <a id='intro_text_a' style="color: #fca10f" href = "mailto:andy.chuatwork@gmail.com">Email</a>.</p>
           </p>
+        </div>
         </span>
       </div>
 

@@ -46,6 +46,10 @@ $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight
 $('.intro_container').css("top",navBarHeight);
 $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
 
+$("#homeLink").click(function() {
+  jQuery('html,body').animate({scrollTop:0},'slow');
+});
+
 $(".dropdown_section").click(function() {
     $('html,body').animate({
         scrollTop: $(".about_section").offset().top - navBarHeight},

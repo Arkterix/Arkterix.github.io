@@ -2,9 +2,9 @@ const API_KEY = 'c6dd605771239a0a4ca7bccf86ce08ec';
 const city_ID = '6094817';
 
 var getWeather = new XMLHttpRequest();
-var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=6094817&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric';
+var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=5992500&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric';
 var getTime = new XMLHttpRequest();
-var timeURL = 'http://api.geonames.org/timezoneJSON?lat=45.4&lng=-75.7&username=chuy009'
+var timeURL = 'http://api.geonames.org/timezoneJSON?lat=44.23&lng=-76.48&username=chuy009'
 var day; //default
 
 getTime.open("GET", timeURL, true);
