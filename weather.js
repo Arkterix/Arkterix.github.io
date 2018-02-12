@@ -45,6 +45,8 @@ getWeather.onreadystatechange = function getIcon()
 
     determineIcon(weatherArray.weather["0"].id);
 
+    console.log(weatherArray.weather["0"].id);
+
     var temp = Number(Math.round(weatherArray.main.temp+'e1')+'e-1');
 
     document.getElementById('Temperature').innerHTML = temp;
@@ -82,7 +84,12 @@ function determineIcon(codeID)
   }
   else if(digit == '5'){
     if (secondDigit == '0'){
-      document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/10d.png\"/>";
+      if (day == true){
+        document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/10d.png\"/>";
+      }
+      else {
+        document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/10n.png\"/>";
+      }
     }
     else if(secondDigit == '1'){
       document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/13d.png\"/>";
