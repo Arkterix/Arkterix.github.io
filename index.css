@@ -1,4 +1,4 @@
-body{
+* {
     padding:0;
     margin:0;
 }
@@ -346,7 +346,8 @@ footer{
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 2.5em;
-  margin-top: 3%;
+  /* margin-top: 3%; */
+  margin-top: 20px;
 }
 
 .project_title{
@@ -354,7 +355,8 @@ footer{
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 2.5em;
-  margin-top: 3%;
+  /* margin-top: 3%; */
+  margin-top: 20px;
 }
 
 .item_section
@@ -578,13 +580,9 @@ a:focus{
   {
     flex-wrap: wrap;
   }
-  .item_stat_container
-  {
-    order: 1;
-  }
   .item_details2
   {
-    order: 0;
+    max-width: 350px;
   }
   .item_details2{
     margin-right: 0;
@@ -598,8 +596,8 @@ a:focus{
   .credits{
     display: none !important;
   }
-  .navbar-collapse{
-    background-color: rgba(32,32,32,0.6);
+  .background{
+    background-position: 33% 50% !important;
   }
 }
 
