@@ -19,7 +19,6 @@ function main() {
 
     $('#tempIndicator').hide();
     $('#tempIndicator').fadeIn(2000);
-
 }
 
 $(document).ready(main);

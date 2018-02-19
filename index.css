@@ -4,8 +4,8 @@ body{
 }
 
 .img-circle {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
     border-radius: 50%;
     width: 30%; /* you can use % */
     height: auto;
@@ -21,7 +21,7 @@ body{
 .intro_words{
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 11em;
+  font-size: 9em;
   color: white;
   padding: 0;
   line-height: 1em;
@@ -440,6 +440,17 @@ a:focus{
   min-height: 300px;
 }
 
+.item_image_container_project_3{
+  background-image: url("./images/Python_Project.jpg");
+  background-position: center center;
+  background-size: cover;
+  flex-basis: 35%;
+  flex-grow: 1;
+  max-width: 280px;
+  min-width: 280px;
+  min-height: 300px;
+}
+
 .item_image_container1
 {
   background-image: url("./images/QueensU_crest.png");
@@ -652,6 +663,9 @@ a:focus{
     background: url(./images/clouds_mini.png)!important;
     background-repeat: repeat-x !important;
     top: 50px !important;
+  }
+  .background{
+    background-position: 36% 50% !important;
   }
 }
 
@@ -875,5 +889,4 @@ a, a:hover, a:visited, a:link, a:active{
 .cool-link a:hover:after {
   width: 100%;
   text-decoration: none;
-
 }
