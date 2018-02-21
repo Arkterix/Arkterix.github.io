@@ -45,6 +45,8 @@ $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight
 $('.intro_container').css("top",navBarHeight);
 $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
 
+$('.container').css("height", getTextContainerHeight+windowHeight-getDownButtonHeight);
+
 $("#homeLink").click(function() {
   jQuery('html,body').animate({scrollTop:0},'slow');
 });
