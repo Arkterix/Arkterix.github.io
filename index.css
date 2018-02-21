@@ -269,7 +269,7 @@ a.navbar-button:hover:after {
 
 .contact_section{
   width: 100%;
-  background-color: rgba(32,32,32,0.6);
+  background-color: rgba(32,32,32,0.2);
   text-align: center;
   padding-bottom: 3%;
   padding-left: 10px;
@@ -528,6 +528,9 @@ a:focus{
   .item_details2{
     margin-right: 50px;
   }
+  .twinkling{
+    margin-top: -50px;
+  }
 }
 @media (max-width: 1600px) {
   .intro_container{
@@ -542,10 +545,6 @@ a:focus{
   }
   .item_details2{
     margin-right: 50px;
-  }
-  .clouds{
-    background: url(./images/clouds_laptop.png)!important;
-    background-repeat: repeat-x !important;
   }
   .img-circle {
     width: 25%;
@@ -596,12 +595,18 @@ a:focus{
   .credits{
     display: none !important;
   }
+  .earth{
+    height: 370px !important;
+  }
   .background{
     background-position: 33% 50% !important;
   }
 }
 
 @media (max-width: 674px) {
+  .navbar-collapse{
+   background-color: rgba(32,32,32,0.6);
+   }
   .img-circle {
     width: 50%;
   }
@@ -657,16 +662,13 @@ a:focus{
   .twinkling{
     height: 500px !important;
   }
-  .clouds{
-    background: url(./images/clouds_mini.png)!important;
-    background-repeat: repeat-x !important;
-    top: 50px !important;
+  .earth{
+    height: 300px !important;
   }
   .background{
     background-position: 36% 50% !important;
   }
 }
-
 
 .demo a {
   position: relative;
@@ -763,26 +765,16 @@ a:focus{
   display:block;
 }
 
-.clouds{
+.earth{
+  background: url("./images/Earth_Orbit.png");
   position:absolute;
-  top:0;
+  bottom:0;
   left:0;
   right:0;
   bottom:0;
   width:100%;
-  display:block;
-}
-
-.clouds{
-  background:transparent url(./images/clouds.png) top center;
-  background-repeat: repeat-x;
-  z-index:3;
-
-  -moz-animation:move-clouds-back 500s linear infinite;
-  -ms-animation:move-clouds-back 500s linear infinite;
-  -o-animation:move-clouds-back 500s linear infinite;
-  -webkit-animation:move-clouds-back 500s linear infinite;
-  animation:move-clouds-back 500s linear infinite;
+  height: 300px;
+  z-index: 3;
 }
 
 .twinkling{
@@ -811,23 +803,6 @@ a:focus{
 @-ms-keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
-}
-
-@keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
 }
 
 #intro_text_a{
