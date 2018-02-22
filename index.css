@@ -3,6 +3,8 @@
     margin:0;
 }
 
+html, body{height:100%;}
+
 .img-circle {
     -moz-border-radius: 20%;
     -webkit-border-radius: 20%;
@@ -231,7 +233,7 @@ a.navbar-button:hover:after {
   align-items: center;
   min-width: 375px;
   position: absolute;
-  max-width: 100%;
+  width: 100%;
   z-index: 2;
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -248,10 +250,15 @@ a.navbar-button:hover:after {
 .about_section{
   background-color: rgb(18,18,18);
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.item_section2
+{
+  margin: 40px;
+  max-width: 1000px;
 }
 
 .project_section{
@@ -343,7 +350,7 @@ footer{
 {
   margin: 5px 0;
   list-style-position: outside;
-  margin-left: 1.5em;
+  margin-left: 2em;
 }
 
 .work_title{
@@ -368,12 +375,6 @@ footer{
 {
   max-width: 900px;
   margin: 40px;
-}
-
-.item_section2
-{
-  margin: 40px;
-  max-width: 1000px;
 }
 
 .skill {
@@ -588,8 +589,6 @@ a:focus{
   .item_details2
   {
     max-width: 350px;
-  }
-  .item_details2{
     margin-right: 0;
   }
   .navbar-nav>li>a{
@@ -602,7 +601,7 @@ a:focus{
     display: none !important;
   }
   .earth{
-    height: 370px !important;
+    height: 420px !important;
   }
   .background{
     background-position: 33% 50% !important;
@@ -647,7 +646,12 @@ a:focus{
     margin-top: 10%;
   }
   .item_stat_container{
-    margin: 2em;;
+    margin: 2em;
+    order: 1;
+  }
+  .item_details2
+  {
+    order: 0;
   }
   .contact_section{
     font-size: 0.8em;
@@ -669,7 +673,7 @@ a:focus{
     height: 500px !important;
   }
   .earth{
-    height: 300px !important;
+    height: 340px !important;
   }
   .background{
     background-position: 36% 50% !important;
