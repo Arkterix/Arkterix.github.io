@@ -4,7 +4,8 @@ var navBarHeight = $('.navbar').height();
 var getDownButtonHeight = $('#section05').height();
 var getHelloWordHeight = $('.intro_words').height();
 var getTextContainerHeight = $('.text_container').height();
-var getTextContainerWidth = $('.text_container').width();
+
+$(document).ready(main);
 
 function main() {
 
@@ -21,8 +22,6 @@ function main() {
     $('#tempIndicator').fadeIn(2000);
 }
 
-$(document).ready(main);
-
 if (window.innerWidth <= 674){
   var date = moment().format("dddd,<br>MMMM Do");
   $('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-85);
@@ -34,18 +33,14 @@ else {
 document.getElementById('Date').innerHTML = date;
 
 $('.twinkling').css("height", windowHeight-getHelloWordHeight);
-
-$('.blur_text_container').css("top", windowHeight-getDownButtonHeight);
-$('.blur_text_container').css("height", getTextContainerHeight);
-$('.blur_text_container').css("width", getTextContainerWidth);
-
 $('.weatherDiv').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
-$('.text_container').css("top", windowHeight-getDownButtonHeight);
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);
 $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
 
 $('.container').css("height", getTextContainerHeight+windowHeight-getDownButtonHeight);
+
+$('.text_container').css("top", windowHeight-getDownButtonHeight);
 
 $("#homeLink").click(function() {
   jQuery('html,body').animate({scrollTop:0},'slow');

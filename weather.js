@@ -45,8 +45,6 @@ getWeather.onreadystatechange = function getIcon()
 
     determineIcon(weatherArray.weather["0"].id);
 
-    console.log(weatherArray.weather["0"].id);
-
     var temp = Number(Math.round(weatherArray.main.temp+'e1')+'e-1');
 
     document.getElementById('Temperature').innerHTML = temp;
