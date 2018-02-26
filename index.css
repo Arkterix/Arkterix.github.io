@@ -460,6 +460,17 @@ a:focus{
   min-height: 300px;
 }
 
+.item_image_container_project_4{
+  background-image: url("./images/Java_Project.jpg");
+  background-position: center center;
+  background-size: cover;
+  flex-basis: 35%;
+  flex-grow: 1;
+  max-width: 280px;
+  min-width: 280px;
+  min-height: 300px;
+}
+
 .item_image_container1
 {
   background-image: url("./images/QueensU_crest.png");
