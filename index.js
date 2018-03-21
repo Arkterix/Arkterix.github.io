@@ -92,6 +92,16 @@ var java = document.getElementById('java')
 var c = document.getElementById('c')
 var problemS = document.getElementById('problemS')
 
+// window.onload = function(){
+//   setTimeout(function(){
+//   $(".page-loading").fadeOut("slow");
+//   },10000)
+// };
+
+window.onload = function(){
+  $(".page-loading").fadeOut("slow");
+};
+
 var waypoints1 = new Waypoint(
 {
   element: $('.text_container'),
