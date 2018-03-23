@@ -265,6 +265,7 @@ a.navbar-button:hover:after {
   line-height: 180%;
   text-decoration: none;
   position: relative;
+  text-decoration: none;
 }
 
 .about_section{
@@ -860,7 +861,7 @@ a:focus{
     to {background-position:-10000px 5000px;}
 }
 
-#intro_text_a{
+.intro_text_a{
   text-decoration: none;
 }
 
@@ -882,10 +883,12 @@ a, a:hover, a:visited, a:link, a:active{
   width: 0%;
   border-bottom: 2px solid;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 .intro_text a:hover:after {
   width: 100%;
+  text-decoration: none;
 }
 
 .item_section a:after {
