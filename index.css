@@ -862,7 +862,7 @@ a:focus{
 }
 
 .intro_text_a{
-  text-decoration: none;
+  text-decoration: none !important; 
 }
 
 #homeLink{
@@ -871,7 +871,7 @@ a:focus{
 }
 
 a, a:hover, a:visited, a:link, a:active{
-  text-decoration: none;
+  text-decoration: none !important;
   position: relative;
 }
 
@@ -883,12 +883,12 @@ a, a:hover, a:visited, a:link, a:active{
   width: 0%;
   border-bottom: 2px solid;
   transition: 0.4s;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .intro_text a:hover:after {
   width: 100%;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .item_section a:after {
