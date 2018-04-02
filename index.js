@@ -41,9 +41,10 @@ $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButton
 $('.container').css("height", getTextContainerHeight+windowHeight-getDownButtonHeight);
 
 $('.text_container').css("top", window.innerHeight-getDownButtonHeight);
-setTimeout(() => {
-  $('.text_container').css("top", window.innerHeight-getDownButtonHeight);
-}, 1000);
+
+// setTimeout(() => {
+//   $('.text_container').css("top", window.innerHeight-getDownButtonHeight);
+// }, 1000);
 
 $("#homeLink").click(function() {
   jQuery('html,body').animate({scrollTop:0},'slow');
@@ -94,6 +95,7 @@ var problemS = document.getElementById('problemS')
 
 window.onload = function(){
   $(".page-loading").fadeOut("slow");
+  $('.text_container').css("top", window.innerHeight-getDownButtonHeight);
 };
 
 var waypoints1 = new Waypoint(

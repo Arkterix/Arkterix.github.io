@@ -42,7 +42,7 @@ getWeather.onreadystatechange = function getIcon()
   if (this.readyState == 4 && this.status == 200)
   {
     var weatherArray = JSON.parse(this.responseText);
-
+    
     determineIcon(weatherArray.weather["0"].id);
 
     var temp = Number(Math.round(weatherArray.main.temp+'e1')+'e-1');
@@ -93,7 +93,7 @@ function determineIcon(codeID)
       document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/13d.png\"/>";
     }
     else {
-      document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/9d.png\"/>";
+      document.getElementById('icon').innerHTML = "<img class = \"weatherIcon\" src=\"./weather_icons/09d.png\"/>";
     }
   }
   else if(digit == '6'){
