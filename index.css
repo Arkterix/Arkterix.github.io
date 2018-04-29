@@ -621,6 +621,10 @@ a:focus{
   .intro_container{
     max-width: 100%;
   }
+  .earth{
+    background-size: cover !important;
+    height: 80% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -715,9 +719,6 @@ a:focus{
   .twinkling{
     height: 500px !important;
   }
-  .earth{
-    height: 340px !important;
-  }
   .background{
     background-position: 36% 50% !important;
   }
@@ -809,14 +810,15 @@ a:focus{
   background: url("./images/Earth_Orbit.png");
   position: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  -moz-background-size: contain;
   background-position: 0% 50%;
   left:0;
   right:0;
-  bottom:0;
-  top: 50%;
+  top: 30%;
   height: 100%;
   width: 100vw;
+  min-width: 375px;
   z-index: 3;
 }
 
