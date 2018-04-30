@@ -653,6 +653,10 @@ a:focus{
   .intro_container{
     left: 1%;
   }
+  .loader{
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 674px) {
