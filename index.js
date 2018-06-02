@@ -156,7 +156,7 @@ var waypoint3 = new Waypoint({
 })
 
 var getWeather = new XMLHttpRequest();
-var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=5992500&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric';
+var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?id=6167865&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric';
 
 getWeather.open("GET", weatherURL, true);
 getWeather.send();
