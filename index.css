@@ -728,6 +728,20 @@ a:focus{
   }
 }
 
+@media (max-height: 400px) {
+  .intro_words{
+    font-size: 3.5em;
+  }
+
+  #dateIndicator{
+    font-size: 1.2em;
+    top: 10px;
+  }
+  .weatherDiv{
+    top: 20px;
+  }
+}
+
 .demo a {
   position: relative;
   top: 3.2em;
