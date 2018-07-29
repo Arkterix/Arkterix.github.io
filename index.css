@@ -735,10 +735,13 @@ a:focus{
 
   #dateIndicator{
     font-size: 1.2em;
-    top: 10px;
+    top: 65px !important;
   }
   .weatherDiv{
-    top: 20px;
+    top: 45px !important;
+  }
+  .intro_container{
+    left: 15%;
   }
 }
 
