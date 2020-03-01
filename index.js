@@ -42,10 +42,6 @@ $('.container').css("height", getTextContainerHeight+windowHeight-getDownButtonH
 
 $('.text_container').css("top", window.innerHeight-getDownButtonHeight);
 
-// setTimeout(() => {
-//   $('.text_container').css("top", window.innerHeight-getDownButtonHeight);
-// }, 1000);
-
 $("#homeLink").click(function() {
   jQuery('html,body').animate({scrollTop:0},'slow');
 });
