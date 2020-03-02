@@ -12,6 +12,12 @@ function main() {
     $(".intro_words").hide();
     $(".intro_words").fadeIn(2000);
 
+    var typed = new Typed("#hello_world", {
+      stringsElement: '#hello_world-strings',
+      strings: ["Hello<br>World"],
+      typeSpeed: 120
+    });
+
     $('#dateIndicator').hide();
     $('#dateIndicator').fadeIn(2000);
 
@@ -24,19 +30,19 @@ function main() {
 
 if (window.innerWidth <= 674){
   var date = moment().format("dddd,<br>MMMM Do");
-  $('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-85);
+  // $('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-85);
 }
 else {
   var date = moment().format("dddd, MMMM Do");
-  $('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-75);
+  // $('#dateIndicator').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-75);
 }
 document.getElementById('Date').innerHTML = date;
 
 $('.twinkling').css("height", windowHeight-getHelloWordHeight);
-$('.weatherDiv').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
+// $('.weatherDiv').css("top", (windowHeight-navBarHeight-getDownButtonHeight)-getHelloWordHeight-105);
 $('.intro_container').css("height",windowHeight-navBarHeight-getDownButtonHeight);
 $('.intro_container').css("top",navBarHeight);
-$('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
+// $('.intro_words').css("top",windowHeight-navBarHeight-navBarHeight-getDownButtonHeight-getHelloWordHeight+40);
 
 $('.container').css("height", getTextContainerHeight+windowHeight-getDownButtonHeight);
 
