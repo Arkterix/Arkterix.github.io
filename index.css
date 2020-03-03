@@ -442,19 +442,8 @@ a:focus {
   -webkit-padding-start: 0px;
 }
 
-.item_image_container_project_5 {
-  background-image: url("./images/React.png");
-  background-position: center center;
-  background-size: cover;
-  flex-basis: 35%;
-  flex-grow: 1;
-  max-width: 280px;
-  min-width: 280px;
-  min-height: 300px;
-}
-
 .item_image_container_project_1 {
-  background-image: url("./images/Enercare_Project.jpg");
+  background-image: url("./images/projects_images/Enercare_Project.jpg");
   background-position: center center;
   background-size: cover;
   flex-basis: 35%;
@@ -465,7 +454,7 @@ a:focus {
 }
 
 .item_image_container_project_2 {
-  background-image: url("./images/KTCS_Project.png");
+  background-image: url("./images/projects_images/KTCS_Project.png");
   background-position: center center;
   background-size: cover;
   flex-basis: 35%;
@@ -476,7 +465,7 @@ a:focus {
 }
 
 .item_image_container_project_3 {
-  background-image: url("./images/Python_Project.jpg");
+  background-image: url("./images/projects_images/Python_Project.jpg");
   background-position: center center;
   background-size: cover;
   flex-basis: 35%;
@@ -487,7 +476,7 @@ a:focus {
 }
 
 .item_image_container_project_4 {
-  background-image: url("./images/Java_project.jpg");
+  background-image: url("./images/projects_images/Java_project.jpg");
   background-position: center center;
   background-size: cover;
   flex-basis: 35%;
@@ -498,7 +487,7 @@ a:focus {
 }
 
 .item_image_veeva {
-  background-image: url("./images/Veeva.png");
+  background-image: url("./images/workplaces_images/Veeva.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -507,7 +496,7 @@ a:focus {
 }
 
 .item_image_queens {
-  background-image: url("./images/QueensU_crest.png");
+  background-image: url("./images/workplaces_images/QueensU_crest.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -516,7 +505,7 @@ a:focus {
 }
  
 .item_image_enercare {
-  background-image: url("./images/Enercare.png");
+  background-image: url("./images/workplaces_images/Enercare.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -525,7 +514,7 @@ a:focus {
 }
 
 .item_image_esdc {
-  background-image: url("./images/ESDC.jpg");
+  background-image: url("./images/workplaces_images/ESDC.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -618,6 +607,12 @@ a:focus {
   .earth{
     background-size: cover !important;
     height: 20% !important;
+    position: fixed;
+    animation: none !important;
+  }
+  .astronaut {
+    animation: none !important;
+    display: none;
   }
 }
 
@@ -801,8 +796,7 @@ a:focus {
 }
 
 .earth {
-  background: url("./images/Earth_Orbit.png");
-  position: fixed;
+  background: url("./images/background_images/Earth_Orbit.png");
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -812,10 +806,11 @@ a:focus {
   width: 100vw;
   min-width: 375px;
   z-index: 3;
+  animation: animatedEarth 30s ease-in-out infinite alternate;
 }
 
 .background {
-  background: url("./images/Main_Background.jpg");
+  background: url("./images/background_images/Main_Background.jpg");
   background-position: 50% 50%;
   background-size: cover;
   height: 100%;
@@ -827,10 +822,24 @@ a:focus {
   min-width: 375px;
 }
 
-.twinkling {
-  background:transparent url(./images/twinkling.png) repeat top center;
-  z-index:1;
+.astronaut {
+  z-index: 4;
+  height: auto;
+  float: right;
+  margin-right: 600px;
+  width: 280px;
+  animation: animatedAstronaut 30s ease-in-out infinite alternate;
+}
 
+.astronaut_container {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  z-index: 4;
+}
+
+.twinkling {
+  background:transparent url(./images/background_images/twinkling.png) repeat top center;
   -moz-animation:move-twink-back 400s linear infinite;
   -ms-animation:move-twink-back 400s linear infinite;
   -o-animation:move-twink-back 400s linear infinite;
@@ -919,4 +928,15 @@ a, a:hover, a:visited, a:link, a:active {
 .cool-link a:hover:after {
   width: 100%;
   text-decoration: none;
+}
+
+
+@keyframes animatedEarth {
+  from { right: 0px;   transform: translate3d(0px, 0, 0); }
+  to { right: 100px; transform: translate3d(100px, 0, 0); }
+}
+
+@keyframes animatedAstronaut {
+  from { right: 0px;   transform: translate3d(0px, 0, 0); }
+  to { right: 180px; transform: translate3d(180px, 0, 0); }
 }
