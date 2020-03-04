@@ -806,7 +806,7 @@ a:focus {
   width: 100vw;
   min-width: 375px;
   z-index: 3;
-  animation: animatedEarth 30s ease-in-out infinite alternate;
+  animation: animatedEarth 60s infinite alternate;
 }
 
 .background {
@@ -828,7 +828,7 @@ a:focus {
   float: right;
   margin-right: 600px;
   width: 280px;
-  animation: animatedAstronaut 30s ease-in-out infinite alternate;
+  animation: animatedAstronaut 60s infinite alternate;
 }
 
 .astronaut_container {
@@ -932,11 +932,11 @@ a, a:hover, a:visited, a:link, a:active {
 
 
 @keyframes animatedEarth {
-  from { right: 0px;   transform: translate3d(0px, 0, 0); }
-  to { right: 100px; transform: translate3d(100px, 0, 0); }
+  from { right: 0px; transform: translate3d(0px, 0, 0); }
+  to { right: 60px; transform: translate3d(60px, 0, 0); }
 }
 
 @keyframes animatedAstronaut {
-  from { right: 0px;   transform: translate3d(0px, 0, 0); }
-  to { right: 180px; transform: translate3d(180px, 0, 0); }
+  from { right: 0px; transform: translate3d(0px, 0, 0); }
+  to { right: 160px; transform: translate3d(160px, 0, 0); }
 }
