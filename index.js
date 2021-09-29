@@ -113,17 +113,8 @@ var waypoint3 = new Waypoint({
   offset: "70%"
 })
 
-var getWeather = new XMLHttpRequest();
-var weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=6167865&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric";
-
-getWeather.open("GET", weatherURL, true);
-getWeather.send();
-
-getWeather.onreadystatechange = function getIcon()
-{
-  if (this.readyState == 4 && this.status == 200)
-  {
-    var weatherArray = JSON.parse(this.responseText);
+var getWeatherXHR = $.get("https://api.openweathermap.org/data/2.5/weather?id=6167865&APPID=c6dd605771239a0a4ca7bccf86ce08ec&units=metric", function(data) {
+    var weatherArray = data;
     var year = (new Date()).getFullYear();
     
     determineIcon(weatherArray.weather["0"].icon);
@@ -132,8 +123,8 @@ getWeather.onreadystatechange = function getIcon()
 
     document.getElementById("Temperature").innerHTML = temp;
     document.getElementById("year").innerHTML = year;
-  }
-}
+});
+
 
 function determineIcon(codeID)
 {
